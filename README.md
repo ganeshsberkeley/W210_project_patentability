@@ -59,3 +59,19 @@ EC2 Steps
 
 The data used for the project is quite large.  So create a volume of atleast 10224 GB in EBS and attach to the instance.
 
+Python Installation
+--------------------
+python --version
+
+sudo yum install python27-devel -y
+
+python --version
+
+mv /usr/bin/python /usr/bin/python266
+
+ln -s /usr/bin/python2.7 /usr/bin/python
+
+/usr/bin/python --version
+
+python --version
+
