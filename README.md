@@ -37,3 +37,25 @@ ssh-copy-id ganeshsberkeley@github.com
 Copy the keys to the github (logon on to git hub, select the repo, click on settings, click on deploy keys, and add the keys there)
 
 cat ~/.ssh/id_rsa.pub
+
+Process to check in files
+-------------------------
+
+Do the following
+
+git status
+
+to see what are the files that need to be pushed
+git add
+
+for all the files that needs to be checked in
+git commit -m "Message"
+
+git push -u origin master
+
+
+EC2 Steps
+-----------
+
+The data used for the project is quite large.  So create a volume of atleast 10224 GB in EBS and attach to the instance.
+
