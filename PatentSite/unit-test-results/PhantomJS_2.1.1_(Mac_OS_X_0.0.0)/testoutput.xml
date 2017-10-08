@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="unit" timestamp="2017-10-08T20:10:57" id="0" hostname="Linfangs-iMac.local" tests="30" errors="0" failures="4" time="0.236">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="FormController should be defined" time="0.051" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.FormController"/>
+  <testcase name="FormController should update contact form" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.FormController"/>
+  <testcase name="IndexController should be defined" time="0.009" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.IndexController"/>
+  <testcase name="IndexController should contain todos list - HTTP 200" time="0.01" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.IndexController"/>
+  <testcase name="IndexController should not contain todos array - HTTP 404" time="0.006" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.IndexController">
+    <failure type="">Possibly unhandled rejection: {"status":404,"config":{"method":"GET","transformRequest":[null],"transformResponse":[null],"jsonpCallbackParam":"callback","url":"assets/data/todos.json","headers":{"Accept":"application/json, text/plain, */*"}},"statusText":"","xhrStatus":"complete"} thrown
+</failure>
+  </testcase>
+  <testcase name="JsonController should be defined" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JsonController"/>
+  <testcase name="JsonController should contain json array - HTTP 200" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JsonController"/>
+  <testcase name="JsonController should not contain json array - HTTP 404" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JsonController">
+    <failure type="">Possibly unhandled rejection: {"status":404,"config":{"method":"GET","transformRequest":[null],"transformResponse":[null],"jsonpCallbackParam":"callback","url":"assets/data/data.json","headers":{"Accept":"application/json, text/plain, */*"}},"statusText":"","xhrStatus":"complete"} thrown
+</failure>
+  </testcase>
+  <testcase name="MountainsDetailsController should be defined" time="0.01" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MountainsDetailsController"/>
+  <testcase name="MountainsDetailsController should get mountain with given id" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MountainsDetailsController"/>
+  <testcase name="MountainsDetailsController should delete element from mountains&quot; list and redirect to mountain&quot;s list view" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MountainsDetailsController"/>
+  <testcase name="MountainsListController should be defined" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MountainsListController"/>
+  <testcase name="MountainsListController should contain mountains&quot; list" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MountainsListController"/>
+  <testcase name="BreadcrumbsController should be defined" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.BreadcrumbsController"/>
+  <testcase name="FooterController should be defined" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.FooterController"/>
+  <testcase name="HeaderController should be defined" time="0.015" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.HeaderController"/>
+  <testcase name="MenuController should be defined" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MenuController"/>
+  <testcase name="MenuController should set active class to current path" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MenuController"/>
+  <testcase name="MenuController should not set active class to other paths" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.MenuController"/>
+  <testcase name="TodosListController should be defined" time="0.002" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.TodosListController"/>
+  <testcase name="TodosListController should delete element from todos list" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.TodosListController"/>
+  <testcase name="TodosNewController should be defined" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.TodosNewController"/>
+  <testcase name="TodosNewController should contain categories array - HTTP 200" time="0.004" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.TodosNewController"/>
+  <testcase name="TodosNewController should not contain categories array - HTTP 404" time="0.003" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.TodosNewController">
+    <failure type="">Possibly unhandled rejection: {"status":404,"config":{"method":"GET","transformRequest":[null],"transformResponse":[null],"jsonpCallbackParam":"callback","url":"assets/data/categories.json","headers":{"Accept":"application/json, text/plain, */*"}},"statusText":"","xhrStatus":"complete"} thrown
+</failure>
+  </testcase>
+  <testcase name="TodosNewController should add new todo and redirect to todos list view" time="0.009" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.TodosNewController"/>
+  <testcase name="About directive should return name, version and author of app" time="0.015" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.About directive"/>
+  <testcase name="Datepicker directive should put the date in the model" time="0.042" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.Datepicker directive">
+    <failure type="">Expected '22/05/2016' to equal '23/05/2016'.
+app/common/directives/datepickerDirectiveSpec.js:18:36
+invoke@app/bower_components/angular/angular.js:5040:24
+WorkFn@app/bower_components/angular-mocks/angular-mocks.js:3182:26
+inject@app/bower_components/angular-mocks/angular-mocks.js:3152:46
+app/common/directives/datepickerDirectiveSpec.js:11:22
+</failure>
+  </testcase>
+  <testcase name="Filter has a rangeTime filter" time="0.005" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.Filter"/>
+  <testcase name="Filter rangeTime should return array of numbers with fractions" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.Filter"/>
+  <testcase name="Filter rangeTime should return array of numbers without fractions" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.Filter"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
