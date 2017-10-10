@@ -12,7 +12,7 @@ https://docs.google.com/presentation/d/1pDtlcFDyNQNFO7TWPlKi3L3Zot2Pmj1OsFoe_aVR
 https://ucbischool.slack.com
 
 ### Next checkpoint 
-10/3      w5       workshop 1: teams and project management - patent
+10/10      w6       presentation 1
 
 
 Steps to push and pull from GITHUB for EC2
