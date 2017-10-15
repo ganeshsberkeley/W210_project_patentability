@@ -19,12 +19,12 @@ unzip csv.zip
 unzip patent_claims_fulltext.csv.zip
 mkdir 2014
 mv *csv 2014/
-rm *csv
+rm *.zip
 wget https://bulkdata.uspto.gov/data/patent/pair/economics/2015/csv.zip
 unzip csv.zip
 mkdir 2015
 mv *csv 2015/
-rm *csv
+rm *.zip
 
 cd ../
 echo $pwd
