@@ -8,14 +8,15 @@ mkdir data_sets
 cd data_sets
 wget https://bulkdata.uspto.gov/data/patent/pair/economics/2014/csv.zip
 wget https://bulkdata.uspto.gov/data/patent/claims/economics/2014/patent_claims_fulltext.csv.zip
-unzip *zip
+unzip csv.zip
+unzip patent_claims_fulltext.csv.zip
 mkdir 2014
-cp -r *csv 2014/
+mv -r *csv 2014/
 rm *csv
 wget https://bulkdata.uspto.gov/data/patent/pair/economics/2015/csv.zip
-unzip *zip
+unzip csv.zip
 mkdir 2015
-cp -r *csv 2015/
+mv -r *csv 2015/
 rm *csv
 else
 echo "Data already downloaded"
