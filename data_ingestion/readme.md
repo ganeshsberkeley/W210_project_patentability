@@ -4,8 +4,7 @@ Create EC2 instance based on AMI "UCB MIDS W205 EX2-FULL".
 1. Log into https://console.aws.amazon.com/ec2/v2/home?region=us-east-1 
 2. Selection region N. Virginia
 3. Go to launch instance, and search for above name in Community AMIs, select m3.2xlarge for size 
-4. Launch that instance using default settings, but modify for the storage part. Add volumn with size 1024G. 
-Be sure to save the key, for example W210.pem 
+4. Launch that instance using default settings, but modify for the storage part. Add volumn with size 1024G. Be sure to save the key, for example W210.pem 
 5. Update permission for the key, for example: ```sudo chmod 600 W210.pem```
 6. Add the key using ssh: ```ssh-add -K W210.pem```
 7. Go to instance, click connect, and copy the connect command and run it. 
@@ -30,8 +29,8 @@ Following instructions here https://devopscube.com/mount-ebs-volume-ec2-instance
 Run setup_ec2.sh as below
 1. Either pull the whole git repo on your EC2 instance, or copy the setup file using scp as mentioned in step2. 
 2. Make sure you are at root directory 
-2. Modify file permission for execution: ```chmod 777 setup_ec.sh```
-3. Then execute the command using this command, make sure you use the drive name on your instance: ```./setup_ec.sh /dev/xvdf```
+3. Modify file permission for execution: ```chmod 777 setup_ec.sh```
+4. Then execute the command using this command, make sure you use the drive name on your instance: ```./setup_ec2.sh /dev/xvdf```
 
 ### Step 5
 Go to /root folder and run below command to start hadoop.
