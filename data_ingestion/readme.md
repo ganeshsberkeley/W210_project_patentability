@@ -5,13 +5,13 @@ Create EC2 instance based on AMI "UCB MIDS W205 EX2-FULL".
 2. Selection region N. Virginia 
 3. Go to launch instance, and search for above name in Community AMIs. 
 4. Launch that instance using default settings. Be sure to save the key, for example W210.pem 
-5. Update permission for example: sudo chmod 600 W210.pem 
-6. Add key for example: ssh-add -K W210.pem
+5. Update permission for example: ```sudo chmod 600 W210.pem```
+6. Add key for example: ```ssh-add -K W210.pem```
 7. Go to instance, click connect, and copy the connect command and run it. 
 
 ### Step 2
 Copy setup_ec2.sh file to EC2 instance. Don't run it yet. 
-1. Update git on your local, and copy file to EC2 instance using: scp -i W210.pem -r ../Documents/GitHub/W210_project_patentability/data_ingestion/setup_ec2.sh root@ec2-54-174-208-210.compute-1.amazonaws.com:/ 
+1. Update git on your local, and copy file to EC2 instance using: ```scp -i W210.pem -r ../Documents/GitHub/W210_project_patentability/data_ingestion/setup_ec2.sh root@ec2-54-174-208-210.compute-1.amazonaws.com:/``` 
 2. Log into EC2 instance, make sure you can find the file. 
 
 ### Step 3
