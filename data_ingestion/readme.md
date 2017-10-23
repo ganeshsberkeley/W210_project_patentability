@@ -44,6 +44,7 @@ Setup github access, since the github repo we are using is private, you need to 
 
 Follow instructions here to seup github so that you can access github using ssh 
 https://help.github.com/articles/connecting-to-github-with-ssh/
+You can use this link to add a new ssh key
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ 
 
 Then follow this to setup access on EC2
