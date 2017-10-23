@@ -57,7 +57,7 @@ git push -u origin master
 EC2 Steps
 -----------
 
-The data used for the project is quite large.  So create a volume of atleast 10224 GB in EBS and attach to the instance.
+The data used for the project is quite large.  So create a volume of atleast 1024 GB in EBS and attach to the instance.
 Once the EC2 volume is attached, please the following 
 1.  Mount the volume when you login to EC2 
 2.  Populate the data from git hub to the volume
