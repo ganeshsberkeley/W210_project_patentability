@@ -37,3 +37,18 @@ Run setup_ec2.sh as below
 ### Step 5
 Go to /root folder and run below command to start hadoop.
 1. At root directory, run: ```./start-hadoop.sh```
+
+
+### Step 6 
+Setup github access, since the github repo we are using is private, you need to setup SSH access
+
+Follow instructions here to seup github so that you can access github using ssh 
+https://help.github.com/articles/connecting-to-github-with-ssh/
+https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ 
+
+Then follow this to setup access on EC2
+http://www.fullstackjs.com/book/16/private-repo-ec2.html
+
+At the end you should be able clone repo on your EC2 instance using 
+'''git clone git@github.com:ganeshsberkeley/W210_project_patentability.git'''
+
