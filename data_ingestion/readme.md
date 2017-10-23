@@ -53,3 +53,6 @@ http://www.fullstackjs.com/book/16/private-repo-ec2.html
 3. At the end you should be able clone repo on your EC2 instance using 
 ```git clone git@github.com:ganeshsberkeley/W210_project_patentability.git```
 
+4. Verify that you can pull from git 
+```cd W210_project_patentability```
+```git pull```
