@@ -13,7 +13,10 @@ Create EC2 instance based on AMI "UCB MIDS W205 EX2-FULL".
 
 ### Step 2
 Copy setup_ec2.sh file to EC2 instance. Don't run it yet. 
-1. Update git on your local, and copy file to EC2 instance using: ```scp -i W210.pem -r {directory to your setup file}/setup_ec2.sh root@{your instance name}compute-1.amazonaws.com:.``` 
+1. Update git on your local, and copy file to EC2 instance using: 
+
+```scp -i W210.pem -r {directory to your setup file}/setup_ec2.sh root@{your instance name}compute-1.amazonaws.com:.``` 
+
 2. Log into EC2 instance, make sure you can find the file under root directory. 
 
 ### Step 3
@@ -43,16 +46,22 @@ Go to /root folder and run below command to start hadoop.
 Setup github access, since the github repo we are using is private, you need to setup SSH access
 
 1. Follow instructions here to seup github so that you can access github using ssh 
+
 https://help.github.com/articles/connecting-to-github-with-ssh/
+
 You can use this link to add a new ssh key
+
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ 
 
 2. Then follow this to setup access on EC2
 http://www.fullstackjs.com/book/16/private-repo-ec2.html
 
 3. At the end you should be able clone repo on your EC2 instance using 
+
 ```git clone git@github.com:ganeshsberkeley/W210_project_patentability.git```
 
 4. Verify that you can pull from git 
+
 ```cd W210_project_patentability```
+
 ```git pull```
