@@ -11,8 +11,12 @@ CREATE EXTERNAL TABLE foreign_priority_2014
 	parent_country_code string,
 	parent_country  string
 )
-ROW FORMAT DELIMITED
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 STORED AS TEXTFILE
 LOCATION '/user/root/w210/foreign_priority/2014';
 
@@ -25,8 +29,12 @@ CREATE EXTERNAL TABLE foreign_priority_2015
 	parent_country_code string,
 	parent_country  string
 )
-ROW FORMAT DELIMITED
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 STORED AS TEXTFILE
 LOCATION '/user/root/w210/foreign_priority/2015';
 
@@ -66,8 +74,12 @@ CREATE EXTERNAL TABLE application_data_2014 (
 	small_entity_indicator char(1),
 	aia_first_to_file char(1)
 )
-ROW FORMAT DELIMITED
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 STORED AS TEXTFILE
 LOCATION '/user/root/w210/application_data/2014' ;
 
@@ -102,8 +114,12 @@ CREATE EXTERNAL TABLE application_data_2015 (
 	small_entity_indicator char(1),
 	aia_first_to_file char(1)
 )
-ROW FORMAT DELIMITED
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 STORED AS TEXTFILE
 LOCATION '/user/root/w210/application_data/2015' ;
 
@@ -119,8 +135,12 @@ CREATE EXTERNAL TABLE transactions_2014(
 	sequence_number decimal,
 	status_code int
 )
-row format delimited
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 stored as textfile
 LOCATION '/user/root/w210/transactions/2014' ;
 
@@ -132,8 +152,12 @@ CREATE EXTERNAL TABLE transactions_2015(
 	sequence_number decimal,
 	status_code int
 )
-row format delimited
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 stored as textfile
 LOCATION '/user/root/w210/transactions/2015' ;
 
@@ -146,8 +170,12 @@ CREATE EXTERNAL TABLE event_codes_2014(
 	event_code string,
 	event_description string
 )
-row format delimited
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 stored as textfile
 LOCATION '/user/root/w210/event_codes/2014' ;
 
@@ -156,8 +184,12 @@ CREATE EXTERNAL TABLE event_codes_2015(
 	event_code string,
 	event_description string
 )
-row format delimited
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 stored as textfile
 LOCATION '/user/root/w210/event_codes/2015' ;
 
@@ -170,8 +202,12 @@ CREATE EXTERNAL TABLE status_codes_2014(
 	appl_status_code  int,
 	status_description string
 )
-row format delimited
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 stored as textfile
 LOCATION '/user/root/w210/status_codes/2014' ;
 
@@ -180,8 +216,12 @@ CREATE EXTERNAL TABLE status_codes_2015(
 	appl_status_code  int,
 	status_description string
 )
-row format delimited
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 stored as textfile
 LOCATION '/user/root/w210/status_codes/2015' ;
 
@@ -191,43 +231,19 @@ LOCATION '/user/root/w210/status_codes/2015' ;
 
 DROP TABLE IF EXISTS patent_text_2014 ;
 CREATE EXTERNAL TABLE patent_text_2014(
-	appl_id string,
+	pat_no  string,
 	claim_no string,
 	claim_txt  string,
 	dependencies string,
 	ind_flg char(1),
-	pat_no  string
+	appl_id string
 )
-row format delimited
-fields terminated by ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
 stored as textfile
 LOCATION '/user/root/w210/full_text/2014' ;
-
-
-DROP TABLE IF EXISTS patent_text_2015 ;
-CREATE EXTERNAL TABLE patent_text_2015(
-	appl_id string,
-	claim_no string,
-	claim_txt  string,
-	dependencies string,
-	ind_flg char(1),
-	pat_no  string
-)
-row format delimited
-fields terminated by ','
-stored as textfile
-LOCATION '/user/root/w210/full_text/2015' ;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
