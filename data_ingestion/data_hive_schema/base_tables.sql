@@ -247,3 +247,29 @@ WITH SERDEPROPERTIES(
 stored as textfile
 LOCATION '/user/root/w210/full_text/2014' ;
 
+-- 
+--  Full text and prior art
+-- 
+
+DROP TABLE IF EXISTS 2014_full_txt ;
+CREATE EXTERNAL TABLE 2014_full_txt(
+	publication_no  string,
+	publication_date string,
+	application_no  string,
+	application_date string,
+	claims_txt string,
+	prior_art string
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES(
+"separatorChar"=",",
+"quoteChar" = "\"",
+"escapeChar"='\\'
+)
+stored as textfile
+LOCATION '/user/root/w210/full_text/2014' ;
+
+
+select application_data_2014.patent_number, application_data_2014.application_type
+FROM application_data_2014
+LEFT JOIN 2014_full_txt on application_data_2014.patent_number = 2014_full_txt.publication_no ; 
