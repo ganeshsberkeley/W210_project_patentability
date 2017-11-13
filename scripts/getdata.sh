@@ -21,7 +21,8 @@ python process_full.py
 rm -rf *.xml
 
 cd scrape
-tail -n+2 ipg140617_xml.csv > 2014_full_txt.csv
-hdfs dfs -put 2014_full_txt.csv /user/root/w210/full_text/2014/2014_full_txt.csv
+mv *.csv 2014_full_text_with_headers.csv
+#tail -n+2 2014_full_text_with_headers.csv > 2014_full_txt.csv
+#hdfs dfs -put 2014_full_txt.csv /user/root/w210/full_text/2014/2014_full_txt.csv
 
 
