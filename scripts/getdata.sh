@@ -16,6 +16,7 @@ echo "Running the splitter"
 python split.py
 
 echo "Extracting the Data"
+pip install xmltodict
 python process_full.py
 
 rm -rf *.xml
