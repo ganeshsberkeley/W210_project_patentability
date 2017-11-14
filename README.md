@@ -11,8 +11,14 @@ https://docs.google.com/presentation/d/1pDtlcFDyNQNFO7TWPlKi3L3Zot2Pmj1OsFoe_aVR
 ### Slack 
 https://ucbischool.slack.com
 
+### Heroku app  
+https://patentfinder.herokuapp.com/
+
+### UI balsamiq  
+https://balsamiq.cloud/s1gny/ps8p2/r2278
+
 ### Next checkpoint 
-10/10      w6       presentation 1
+11/14     w10       presentation 2 
 
 
 Steps to push and pull from GITHUB for EC2
