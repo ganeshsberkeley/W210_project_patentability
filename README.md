@@ -2,11 +2,11 @@
 
 The project folder for capstone
 
-### Google doc 
-https://docs.google.com/presentation/d/1tVJt7rY5WC3kwxC0yHxXtODOS29Wa9rqwgr2L-T8J6k/edit#slide=id.g254836169a_0_0
-
-### Presentation 
+### Presentation 1 Google Doc
 https://docs.google.com/presentation/d/1pDtlcFDyNQNFO7TWPlKi3L3Zot2Pmj1OsFoe_aVRNro/edit?ts=59d27c4d#slide=id.p
+
+### Presentation 2 Google Doc
+https://docs.google.com/presentation/d/1tVJt7rY5WC3kwxC0yHxXtODOS29Wa9rqwgr2L-T8J6k/edit#slide=id.g254836169a_0_0
 
 ### Slack 
 https://ucbischool.slack.com
