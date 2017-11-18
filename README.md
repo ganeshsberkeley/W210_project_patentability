@@ -17,8 +17,12 @@ https://patentfinder.herokuapp.com/
 ### UI balsamiq  
 https://balsamiq.cloud/s1gny/ps8p2/r2278
 
+### Previous prject 
+http://patentrecommender.s3-website-us-west-2.amazonaws.com/
+https://www.ischool.berkeley.edu/projects/2016/patent-recommender 
+
 ### Next checkpoint 
-11/14     w10       presentation 2 
+12/12     4-8pm       Final presentation  
 
 
 Steps to push and pull from GITHUB for EC2
