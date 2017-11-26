@@ -30,7 +30,7 @@ This notebook has all the code to create first level and second level clusters u
 3_W210_Get_Clusters_For_A_Query.ipynb
 This notebook has the code to return first and second level clusters for a query coming in from the application
 
-4_w210_Get_Somilarities_For_A_Query
+4_w210_Get_Similarities_For_A_Query ----
 In progress by Nilesh and Ganesh
 
 ### Previous prject 
