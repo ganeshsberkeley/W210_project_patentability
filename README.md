@@ -17,6 +17,22 @@ https://patentfinder.herokuapp.com/
 ### UI balsamiq  
 https://balsamiq.cloud/s1gny/ps8p2/r2278
 
+### Scripts
+1_W210_Load_XML_Data_To_S3.ipynb
+This notebook has all the code for parsing patent application bulk files every week and to generate csv files for each year
+
+The csv file structure is 
+appl_doc_number,appl_country,appl_date,pub_doc_number,pub_date,number_of_days,invention_title,abstract,claim_text,claim_text_stemmed
+
+2_W210_Create_Clusters_For_Data.ipynb
+This notebook has all the code to create first level and second level clusters using NMF topic modeling
+
+3_W210_Get_Clusters_For_A_Query.ipynb
+This notebook has the code to return first and second level clusters for a query coming in from the application
+
+4_w210_Get_Somilarities_For_A_Query
+In progress by Nilesh and Ganesh
+
 ### Previous prject 
 http://patentrecommender.s3-website-us-west-2.amazonaws.com/
 https://www.ischool.berkeley.edu/projects/2016/patent-recommender 
