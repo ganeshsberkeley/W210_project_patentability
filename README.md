@@ -17,6 +17,9 @@ https://patentfinder.herokuapp.com/
 ### UI balsamiq  
 https://balsamiq.cloud/s1gny/ps8p2/r2278
 
+### S3 bucket with data and model files
+https://s3.console.aws.amazon.com/s3/buckets/ncw210data/NewClusterFiles/?region=us-east-1&tab=overview
+
 ### Scripts
 1_W210_Load_XML_Data_To_S3.ipynb
 This notebook has all the code for parsing patent application bulk files every week and to generate csv files for each year
