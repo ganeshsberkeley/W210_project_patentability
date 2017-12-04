@@ -1,0 +1,17 @@
+#!/bin/bash
+
+sudo yum update
+cd ~
+wget https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
+
+# Unpack Spark in the /opt directory
+sudo tar zxvf spark-2.2.0-bin-hadoop2.7.tgz -C /opt
+
+# Create a symbolic link to make it easier to access
+sudo ln -fs spark-2.2.0-bin-hadoop2.7 /opt/spark
+
+#write spark_home
+echo "export SPARK_HOME=/opt/spark" >> ~/.bash_profile
+echo "PATH=$PATH:$SPARK_HOME/bin" >> ~/.bash_profile
+echo "export PATH" >> ~/.bash_profile
+
