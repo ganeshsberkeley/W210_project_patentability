@@ -11,6 +11,10 @@ https://docs.google.com/presentation/d/1tVJt7rY5WC3kwxC0yHxXtODOS29Wa9rqwgr2L-T8
 ### Final Presentation Google Doc
 https://docs.google.com/presentation/d/1ZV6uhMfStlh6gYwiXBOQbhd6s8TY0iQbiqlyxPJ1xQM/edit#slide=id.g285e72c042_0_1
 
+### Updated final presentation:
+
+https://docs.google.com/presentation/d/1rJu05ex1Ur1LwSIAszXUTGoBJWlkUNw0o5Iu1FBXBD8/edit#slide=id.p3
+
 ### Slack 
 https://ucbischool.slack.com
 
