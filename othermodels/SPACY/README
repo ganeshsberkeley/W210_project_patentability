@@ -1,0 +1,20 @@
+This is the spacy model directory
+
+requirements.txt has all the python imports needed
+
+The cluster CSV files need to be present in the CSV directory
+So do the following
+mkdir CSV
+Copy all the cluster CSV files to CSV directory
+
+Connect to python (ipython)
+
+There is one script
+
+W210_Cosine_Similarity_Spacy.ipynb --> to generate cosine similarity between new claim and claims in the selected top-cluster/subcluster
+
+The script will ask for the following user input
+1.  New claims text
+2.  Top cluster number (0->9)
+3.  Sub-cluster number (0->9)
+4.  topn documents to display

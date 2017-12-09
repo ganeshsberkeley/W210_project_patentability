@@ -1,0 +1,29 @@
+This is the doc2vec model directory
+
+requirements.txt has all the python imports needed
+
+The cluster CSV files need to be present in the CSV directory
+So do the following
+mkdir CSV
+Copy all the cluster CSV files to CSV directory
+
+Connect to python (ipython)
+
+There is one script
+W210_Tensorflow_Cosine_Similarity.ipynb --> Python script that reads the CSV files and generates the TF model for selected cluster .  Cosine similarity is calcualted and topn documents will be printed
+An example csv file is given patent_data_2wks.csv
+
+The script has a variable which defines whether we are going to use the patent_data_2wks.csv or the cluster CSV file.  
+The script defaults to patent_data_2wks.csv
+If the user goes with the default, the scrit will ask for the following user input
+1.  New claims text
+2.  topn documents to display
+
+If the user decides to use the cluster files, then the script will ask for the following user input
+1.  New claims text
+2.  Top cluster number (0->9)
+3.  Sub-cluster number (0->9)
+4.  topn documents to display
+
+
+

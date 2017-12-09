@@ -1,0 +1,14 @@
+This directory consists of all the deprecated models that did not make the final cut for the project
+
+The models are
+1.  DOC2VEC --> gensim doc2vec model
+2.  SPACY -> spacy model for cosine similarity
+3.  TENSORFLOW -> TF model for cosine similarity
+
+Each model flow follows the same steps.
+
+Generate the models based on the cluster CSV files that were pregenerated from the USPTO data
+Train the model with variables from the CSV file (application patent number, stemmed claims text)
+Ask user to enter new claim
+Perform Cosine similarity between new claim and the claims that are already part of the dataset
+Print the topn claims based on cosine similarity

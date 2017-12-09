@@ -1,0 +1,23 @@
+This is the doc2vec model directory
+
+requirements.txt has all the python imports needed
+
+The cluster CSV files need to be present in the CSV directory
+So do the following
+mkdir CSV
+Copy all the cluster CSV files to CSV directory
+mkdir MODELS --> This is where the doc2vec models will be stored upon generation
+
+Connect to python (ipython)
+
+There are two scripts
+W210_Patent_Doc2Vec.ipynb --> Python script that reads the CSV files and generates the doc2vec models for each cluster (stored in the MODELS directory)
+
+After the models are generated run the following script
+W210_Patent_Doc2vec_cosine_similarity.ipynb --> to generate cosine similarity between new claim and claims in the selected top-cluster/subcluster
+
+The script will ask for the following user input
+1.  New claims text
+2.  Top cluster number (0->9)
+3.  Sub-cluster number (0->9)
+4.  topn documents to display
