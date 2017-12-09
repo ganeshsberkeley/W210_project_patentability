@@ -8,12 +8,12 @@ https://docs.google.com/presentation/d/1pDtlcFDyNQNFO7TWPlKi3L3Zot2Pmj1OsFoe_aVR
 ### Presentation 2 Google Doc
 https://docs.google.com/presentation/d/1tVJt7rY5WC3kwxC0yHxXtODOS29Wa9rqwgr2L-T8J6k/edit#slide=id.g254836169a_0_0
 
-### Final Presentation Google Doc
-https://docs.google.com/presentation/d/1ZV6uhMfStlh6gYwiXBOQbhd6s8TY0iQbiqlyxPJ1xQM/edit#slide=id.g285e72c042_0_1
-
-### Updated final presentation:
-
+### Presentation 3 Google Doc(trial run)
 https://docs.google.com/presentation/d/1rJu05ex1Ur1LwSIAszXUTGoBJWlkUNw0o5Iu1FBXBD8/edit#slide=id.p3
+
+### Final Presentation Google Doc
+https://docs.google.com/presentation/d/1JlBb0F0SivOJHzN1SaXQ9kjFqtMyk8Csj7dFTRX7pTM/edit#slide=id.p3
+
 
 ### Slack 
 https://ucbischool.slack.com
