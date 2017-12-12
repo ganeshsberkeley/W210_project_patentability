@@ -40,8 +40,18 @@ This notebook has all the code to create first level and second level clusters u
 3_W210_Get_Clusters_For_A_Query.ipynb
 This notebook has the code to return first and second level clusters for a query coming in from the application
 
-4_w210_Get_Similarities_For_A_Query ----
-In progress by Nilesh and Ganesh
+4.W210_Patent_Grant_Data-Match_To_Small_Files.ipynb
+This notebook has the code to get patent grant numbers 
+
+5.W210_Create_Charts_Data.ipynb
+This notebook has the code to get statistics for each clusters
+
+6.W210_Flask_API.ipynb
+This notebook has the search function code and flask API to expose the function as API
+
+7.W210_Patent_Get_PriorArt_Data_To_S3.ipynb
+This notebook has the code to collect prior-art references from the xml data for validation
+
 
 ### Previous prject 
 http://patentrecommender.s3-website-us-west-2.amazonaws.com/
