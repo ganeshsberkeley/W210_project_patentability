@@ -1,0 +1,102 @@
+ {% extends "layout-old.html" %} {% block body %}
+<div id='{{keyName}}_chart'></div>
+
+<script type="text/javascript">
+
+    var padding = 30;
+    var margin = { top: padding * 2, right: padding * 2, bottom: padding * 3, left: padding * 2 },
+        width = 550 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
+
+    var y = d3.scale.linear().range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .ticks(10)
+        .tickFormat(d3.format("1000s"));
+
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function (d) {
+            return "<strong>X: </strong><span style='color:red'>" + d["{{keyName}}"] + "</span></br>" +
+                "<strong>Y:</strong> <span style='color:red'>" + d.count + "</span>";
+        })
+
+    var svg = d3.select("#{{keyName}}_chart").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.call(tip);
+
+    d3.csv("{{fileName}}", function (error, data) {
+
+        data.forEach(function (d) {
+            d.count = +d.count;
+        });
+
+        x.domain(data.map(function (d) { return d["{{keyName}}"]; }));
+        y.domain([0, d3.max(data, function (d) { return d.count; })]);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", "-.55em")
+            .attr("transform", "rotate(-90)");
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Count");
+
+        svg.selectAll("bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function (d) { return x(d["{{keyName}}"]); })
+            .attr("width", x.rangeBand())
+            .attr("y", function (d) { return y(d.count); })
+            .attr("height", function (d) { return height - y(d.count); })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide);
+
+        svg.append("text")
+            .attr("text-anchor", "middle")
+            .attr('class', 'axis-label')
+            .attr("transform", "translate(" + (width / 2) + "," + (height + 2 * padding) + ")")
+            .text("{{labels[0]}}");
+
+        svg.append("text")
+            .attr("text-anchor", "middle")
+            .attr('class', 'axis-label')
+            .attr("transform", "translate(" + (-1.5 * padding) + "," + (height / 2) + ")rotate(-90)")
+            .text("{{labels[1]}}");
+
+        svg.append("text")
+            .attr("x", (width / 2))
+            .attr("y", 0 - (margin.top / 2))
+            .attr("text-anchor", "middle")
+            .attr('class', 'axis-label')
+            .text("{{labels[2]}}");
+
+    });
+
+</script> {% endblock %}

@@ -1,0 +1,223 @@
+{
+    "searchresult": [
+      {
+        "cosine_similarity": 0.6479613066,
+        "appl_doc_number": 11388059,
+        "invention_title": "Hosta plant named 'Beckoning'",
+        "abstract": "A new and distinct Hosta plant named Ã¢ÂÂBeckoningÃ¢ÂÂ characterized by heart-shaped, large-sized, leaves with blue-green margins, yellowish leaf centers, tall vertical flower scapes with many near white flowers held nicely above foliage, suitable for landscape, potted culture, or cut flower arrangements.",
+        "claim_text": "1 . A new and distinct cultivar of ornamental  Hosta  plant named ‘Beckoning’ as herein described and illustrated, with yellowish leaf center and blue-green margin, suitable as a potted plant, for the garden, and for cut flower arrangements."
+      },
+      {
+        "cosine_similarity": 0.4509709903,
+        "appl_doc_number": 10809724,
+        "invention_title": "HOSTA PLANT NAMED 'GRAND MARQUEE'",
+        "abstract": "A new cultivar of hybrid Hosta, Ã¢ÂÂGrand MarqueeÃ¢ÂÂ, characterized by its unique variegated foliage with wide blue-green margins and creamy white centers, its upright, mounding and relatively compact plant habit, and pale lavender flowers positioned above the foliage on strong and erect flower scapes.",
+        "claim_text": "1 . A new and distinct cultivar of hosta plant named ‘Grand Marquee’ as herein illustrated and described."
+      },
+      {
+        "cosine_similarity": 0.4509709903,
+        "appl_doc_number": 13135847,
+        "invention_title": "Hosta plant named 'Ben Vernooij'",
+        "abstract": "A new and distinct Hosta cultivar named Ã¢ÂÂBen VernooijÃ¢ÂÂ is disclosed, characterized by distinctive round foliage on thick petioles, vigorous plant habit and strong foliage, with good resistance to environmental stressors and large flowers. The near variety is a Hosta, typically used for outdoor ornamental purposes.",
+        "claim_text": "1 . A new and distinct cultivar of  Hosta  plant named ‘Ben Vernooij’ as herein illustrated and described."
+      },
+      {
+        "cosine_similarity": 0.4509709903,
+        "appl_doc_number": 14544414,
+        "invention_title": "Hosta plant named  'Ambrosia'",
+        "abstract": "A new and distinct cultivar of Hosta named Ã¢ÂÂAmbrosia, characterized by its large sized mounding clump, blue leaf margin with a light yellow center, the presence of a heavy glaucous wax over the entire leaf surface, vigorous growth rate, and pale lavender fragrant flowers. In combination these traits set Ã¢ÂÂAmbrosiaÃ¢ÂÂ apart from all other existing varieties of Hosta known to the inventor.",
+        "claim_text": "1 . A new and distinct cultivar of  Hosta  plant named ‘Ambrosia’ as illustrated and described herein."
+      },
+      {
+        "cosine_similarity": 0.3948133042,
+        "appl_doc_number": 13135870,
+        "invention_title": "Hosta plant named 'Forbidden Fruit'",
+        "abstract": "A new and distinct Hosta cultivar named Ã¢ÂÂForbidden FruitÃ¢ÂÂ is disclosed, characterized by distinctive large, bright foliage with a green margin, vigorous plant habit and strong foliage, with good resistance to environmental stressors and large flowers. The near variety is a Hosta, typically used for outdoor ornamental purposes.",
+        "claim_text": "1 . A new and distinct cultivar of  Hosta  plant named ‘Forbidden Fruit’ as herein illustrated and described."
+      }
+    ],
+    "firstcluster": "9",
+    "secondcluster": "5",
+    "firstcluster_topics": "cell sequenc acid said method protein nucleic amino antibodi polypeptid bind express administ consist encod human select sampl subject molecul fragment nucleotid composit isol group pharmaceut thereof activ diseas gene cancer treat effect peptid agent vector patient polynucleotid specif antigen step cancel tissu therapeut produc plant recombin condit cultur ident inhibit receptor treatment domain biolog chain target hybrid accept deriv host anti promot residu tumor region presenc carrier inhibitor detect level test disord induc need combin contact blood growth variant label administr virus enzym mammal site accord factor link increas modifi immun heavi product anim monoclon oligonucleotid infect probe complex",
+    "secondcluster_topics": "said hous connect circuit board mount electr heat diod assembl light emit power lamp conduct cover open attach bodi portion devic coupl support modul sourc print wire extend connector dispos contact thermal sink wall led suppli chip provid element surfac frame hole materi plural dissip flexibl illumin posit oper packag defin fix batteri switch outer communic inner includ control configur space adapt fixtur interior electron mean receiv termin len caviti reflector secur insert second locat metal sensor vehicl base tube engag extern mechan integr proxim structur case insid compon lead seal bulb remov transpar member holder cool substanti chamber activ",
+    "charts_data": {
+      "charts_data1": [
+        {
+          "pub_year": 2005,
+          "count": 319
+        },
+        {
+          "pub_year": 2006,
+          "count": 367
+        },
+        {
+          "pub_year": 2007,
+          "count": 442
+        },
+        {
+          "pub_year": 2008,
+          "count": 305
+        },
+        {
+          "pub_year": 2009,
+          "count": 282
+        },
+        {
+          "pub_year": 2010,
+          "count": 251
+        },
+        {
+          "pub_year": 2011,
+          "count": 246
+        },
+        {
+          "pub_year": 2012,
+          "count": 332
+        },
+        {
+          "pub_year": 2013,
+          "count": 490
+        },
+        {
+          "pub_year": 2014,
+          "count": 651
+        },
+        {
+          "pub_year": 2015,
+          "count": 573
+        },
+        {
+          "pub_year": 2016,
+          "count": 721
+        },
+        {
+          "pub_year": 2017,
+          "count": 719
+        }
+      ],
+      "charts_data2": [
+        {
+          "appl_year": 2001,
+          "count": 3
+        },
+        {
+          "appl_year": 2002,
+          "count": 6
+        },
+        {
+          "appl_year": 2003,
+          "count": 84
+        },
+        {
+          "appl_year": 2004,
+          "count": 376
+        },
+        {
+          "appl_year": 2005,
+          "count": 353
+        },
+        {
+          "appl_year": 2006,
+          "count": 419
+        },
+        {
+          "appl_year": 2007,
+          "count": 296
+        },
+        {
+          "appl_year": 2008,
+          "count": 231
+        },
+        {
+          "appl_year": 2009,
+          "count": 262
+        },
+        {
+          "appl_year": 2010,
+          "count": 269
+        },
+        {
+          "appl_year": 2011,
+          "count": 372
+        },
+        {
+          "appl_year": 2012,
+          "count": 563
+        },
+        {
+          "appl_year": 2013,
+          "count": 643
+        },
+        {
+          "appl_year": 2014,
+          "count": 559
+        },
+        {
+          "appl_year": 2015,
+          "count": 780
+        },
+        {
+          "appl_year": 2016,
+          "count": 442
+        },
+        {
+          "appl_year": 2017,
+          "count": 40
+        }
+      ],
+      "charts_data3": [
+        {
+          "years_to_publish": 0.5,
+          "count": 1099
+        },
+        {
+          "years_to_publish": 1.0,
+          "count": 267
+        },
+        {
+          "years_to_publish": 1.5,
+          "count": 4177
+        },
+        {
+          "years_to_publish": 2.0,
+          "count": 73
+        },
+        {
+          "years_to_publish": 2.5,
+          "count": 40
+        },
+        {
+          "years_to_publish": 3.0,
+          "count": 17
+        },
+        {
+          "years_to_publish": 3.5,
+          "count": 11
+        },
+        {
+          "years_to_publish": 4.0,
+          "count": 7
+        },
+        {
+          "years_to_publish": 4.5,
+          "count": 3
+        },
+        {
+          "years_to_publish": 5.0,
+          "count": 1
+        },
+        {
+          "years_to_publish": 6.5,
+          "count": 1
+        },
+        {
+          "years_to_publish": 7.0,
+          "count": 1
+        },
+        {
+          "years_to_publish": 7.5,
+          "count": 1
+        }
+      ]
+    }
+  }
