@@ -6,7 +6,7 @@ Flask_WTF==0.14.2
 plotly==2.0.0
 dj_database_url==0.4.2
 Django==2.0b1
-IPython==5.1.0
+IPython==7.16.3
 nltk==3.2.1
 pandas==0.18.1
 SciPy==0.18.1
